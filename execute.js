@@ -11,7 +11,7 @@ const runScriptOnWebsites = async (filePath) => {
       let browser;
       try {
         browser = await puppeteer.launch({
-          headless: false, // Set to true if you want headless mode
+          headless: true, // Set to true if you want headless mode
           devtools: false  // Set to true if you need devtools open
         });
 
